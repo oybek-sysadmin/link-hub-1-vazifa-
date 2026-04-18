@@ -12,12 +12,16 @@ export default function ResumeDownload() {
     >
       <div className="relative group rounded-full">
         {/* Neon Border Effect */}
-        <div className="absolute -inset-[2px] rounded-full bg-gradient-to-r from-neon-accent via-neon-accent-secondary to-neon-accent bg-[length:400%_400%] animate-[border-beam_3s_linear_infinite] opacity-75 group-hover:opacity-100 transition duration-500 blur-sm"></div>
+        <div className="absolute -inset-[2px] rounded-full bg-gradient-to-r from-cyan-400 via-purple-500 to-cyan-400 bg-[length:400%_400%] animate-[border-beam_3s_linear_infinite] opacity-75 group-hover:opacity-100 transition duration-500 blur-sm"></div>
         
-        <button className="relative flex items-center justify-center gap-2 bg-deep-charcoal text-white font-medium px-8 py-3 rounded-full hover:bg-gray-900 transition-colors">
-          <Download className="w-4 h-4" />
-          <span>Download CV</span>
-        </button>
+        <a 
+          href="/resume.pdf" 
+          download="Oybek_Isroilov_Resume.pdf"
+          className="relative flex items-center justify-center gap-2 bg-[#050505] text-cyan-50 font-bold px-8 py-3 rounded-full hover:bg-[#111] transition-colors border border-white/10 group-hover:border-cyan-500/50"
+        >
+          <Download className="w-5 h-5 text-cyan-400" />
+          <span className="tracking-widest uppercase text-sm">Download Resume</span>
+        </a>
       </div>
     </motion.div>
   );

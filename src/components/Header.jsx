@@ -34,12 +34,20 @@ export default function Header() {
       </div>
       
       <h1 className="text-4xl md:text-5xl font-extrabold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500 mb-3 drop-shadow-[0_0_10px_rgba(56,189,248,0.8)]" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
-        NEXUS_CORE
+        Oybek Isroilov
       </h1>
-      <p className="text-cyan-100/70 text-center max-w-md px-4 text-sm md:text-base leading-relaxed tracking-wide">
-        System initialized. <br/> Accessing neural pathways... ⚡💻 <br/>
-        <span className="text-purple-400 text-xs">STATUS: ONLINE</span>
-      </p>
+      <h2 className="text-lg md:text-xl font-bold text-cyan-300 mb-6 tracking-widest uppercase text-center flex items-center justify-center gap-2">
+        <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+        System Admin & AI Engineer
+        <span className="w-2 h-2 rounded-full bg-purple-400 animate-pulse"></span>
+      </h2>
+      <div className="relative mt-2 max-w-xl w-full p-5 md:p-6 mb-2 rounded-2xl bg-black/40 border border-white/10 backdrop-blur-md shadow-[0_0_20px_rgba(0,0,0,0.5)] overflow-hidden group">
+        <div className="absolute -inset-0.5 bg-gradient-to-r from-cyan-500/10 via-purple-500/10 to-pink-500/10 rounded-2xl blur opacity-50 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-cyan-500/50 to-transparent"></div>
+        <p className="text-cyan-50/90 text-center text-sm md:text-base leading-relaxed tracking-wide relative z-10 font-[Inter,sans-serif]">
+          Men IT infratuzilmalarni boshqarish, avtomatlashtirish va xavfsizligini ta'minlashga ixtisoslashgan mutaxassisman. Serverlar, tarmoqlar va sun'iy intellekt asosidagi tizimlar bilan ishlash orqali samaradorlikni oshirishga qiziqaman. Hozirda AI va avtomatlashtirish texnologiyalarini real loyihalarga joriy qilish ustida faol ishlayapman.
+        </p>
+      </div>
     </motion.div>
   );
 }

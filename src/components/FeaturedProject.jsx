@@ -13,7 +13,7 @@ export default function FeaturedProject() {
     >
       <div className="flex items-center gap-2 mb-4 px-1">
         <TerminalSquare className="w-5 h-5 text-cyan-400" />
-        <h2 className="text-cyan-400 text-sm font-bold tracking-[0.2em] uppercase origin-left">Latest Deployment</h2>
+        <h2 className="text-cyan-400 text-sm font-bold tracking-[0.2em] uppercase origin-left">Core Expertise</h2>
       </div>
       
       <div className="relative rounded-2xl overflow-hidden border border-cyan-900/50 hover:border-cyan-400 bg-black/60 backdrop-blur-md transition-all duration-500 shadow-[0_0_20px_rgba(8,145,178,0.2)] hover:shadow-[0_0_40px_rgba(34,211,238,0.4)]">
@@ -28,21 +28,21 @@ export default function FeaturedProject() {
              <div className="absolute inset-0 bg-gradient-to-tr from-purple-900/40 to-cyan-900/40"></div>
              {/* Fake Code structure for aesthetic */}
              <div className="absolute top-4 left-4 text-[10px] text-cyan-500/50 font-mono">
-               <p>$ init system_core.sh</p>
-               <p>{">"} loading assets... [OK]</p>
-               <p>{">"} establishing connection... [OK]</p>
-               <p className="animate-pulse">{">"} waiting for input_</p>
+               <p>$ init n8n_workflow_engine</p>
+               <p>{">"} integrating OpenAI API... [OK]</p>
+               <p>{">"} connecting database [PostgreSQL]... [OK]</p>
+               <p className="animate-pulse">{">"} automating process_</p>
              </div>
           </div>
           <div className="absolute bottom-4 left-5 z-20">
-            <h3 className="text-white font-extrabold text-2xl drop-shadow-[0_0_5px_rgba(255,255,255,0.5)]">AI Nexus Dashboard</h3>
-            <p className="text-cyan-400 text-xs mt-1 uppercase tracking-wider font-bold">Cybernetics Interface</p>
+            <h3 className="text-white font-extrabold text-2xl drop-shadow-[0_0_5px_rgba(255,255,255,0.5)]">AI & Workflow Automation</h3>
+            <p className="text-cyan-400 text-xs mt-1 uppercase tracking-wider font-bold">n8n / AI Tools / Python</p>
           </div>
         </div>
         
         <div className="p-5 border-t border-cyan-900/50">
           <div className="flex justify-between items-center mb-3">
-            <span className="text-xs text-gray-400 font-mono">System Integrity</span>
+            <span className="text-xs text-gray-400 font-mono">Automation Efficiency</span>
             <span className="text-xs font-bold text-cyan-400 font-mono shadow-cyan-400 drop-shadow-md">99.9%</span>
           </div>
           <div className="w-full bg-[#111] rounded-full h-2 mb-5 overflow-hidden border border-cyan-900/30">
@@ -54,11 +54,13 @@ export default function FeaturedProject() {
           <motion.a 
             whileHover={{ scale: 1.02, backgroundColor: "rgba(34, 211, 238, 0.15)" }}
             whileTap={{ scale: 0.98 }}
-            href="#"
+            href="https://github.com/oybek-sysadmin"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center justify-center w-full py-4 rounded-xl bg-cyan-900/20 border border-cyan-500/30 text-white font-bold tracking-wide transition-colors relative overflow-hidden group/btn"
           >
             <span className="relative z-10 flex items-center">
-              ACCESS TERMINAL <ArrowRight className="w-5 h-5 ml-2 transform group-hover/btn:translate-x-1 transition-transform" />
+              VIEW GITHUB REPO <ArrowRight className="w-5 h-5 ml-2 transform group-hover/btn:translate-x-1 transition-transform" />
             </span>
           </motion.a>
         </div>
